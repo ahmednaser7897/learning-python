@@ -2,11 +2,18 @@
 #Strings functions
 #-------------
 #Strings are sequences of characters
-#Strings are immutable
 #Strings are indexed
 #Strings are ordered
-#Strings are mutable
 #Strings are iterable
+########
+    #Strings are immutable
+    #1-No Item Assignment: You cannot change a specific character by its index.
+    #Attempting an operation like my_string[0] = 'a' will raise a TypeError.
+    #2-New Object Creation: Any operation that appears to "change" a string—such as concatenation (+), replace(), or upper()—
+    #actually creates and returns an entirely new string object rather than modifying the original one.
+    #3-Variable Reassignment vs. Mutability: You can reassign a variable to a different string (e.g., s = "hello", then s = "world"),
+    #but this only changes which object the variable points to; it does not change the original "hello" object itself.
+########
 
 #len() is a function that returns the length (int) of iterable
 name = "ahmed nasr"
@@ -31,7 +38,7 @@ print(name.lstrip("#"))
 # with the first character of each word 
 
 name = "ahmed nasr #fsd"
-print(name.capitalize())
+print(name.capitalize())#Ahmed nasr #fsd
 
 #title() 
 # is a function that returns a copy of the string 
@@ -39,10 +46,11 @@ print(name.capitalize())
 #and firs character after a number 
 #capitalized
 name = "ahmed nasr #fsd"
-print(name.title())
+print(name.title())#Ahmed Nasr #Fsd
 
 #zfill()
 # is a function that returns a copy of the string
+# that is filled with zeros on the left to reach the specified length
 a="1"
 b="11"
 c="111"
@@ -58,12 +66,12 @@ print(name.count("a"))
 # is a function that returns a copy of the string 
 # with all the characters converted to uppercase
 name = "Ahmed Nasr"
-print(name.upper())
+print(name.upper())#AHMED NASR
 #lower()
 # is a function that returns a copy of the string 
 # with all the characters converted to lowercase
 name = "Ahmed Nasr"
-print(name.lower())
+print(name.lower())#ahmed nasr
 
 
 #split() rsplit()
@@ -74,7 +82,7 @@ print(name.split())#['ahmed', 'nasr', 'is', 'my', 'name']
 #max split splat is the number of splits and make the last in one item
 name = "ahmed-nasr-is-my-name"
 print(name.split("-",3))#['ahmed', 'nasr', 'is', 'my-name']
-print(name.rsplit("-",3))#['ahmed', 'nasr', 'is', 'my-name']
+print(name.rsplit("-",3))#['ahmed-nasr', 'is', 'my', 'name']
 
 
 
@@ -141,7 +149,6 @@ print(name.find("mohamed",10,))#-1 not error like index function
 
 
 #rjust , ljust
-
 # that we give and fill the string with the specified character
 # if does not fill the string with the specified character default is " " 
 name = "ahmed nasr"
@@ -167,7 +174,7 @@ print(name.expandtabs(30))#ahmed nasr    ahmed nasr    ahmed nasr
 print("Ahmned Naser".istitle())#True
 print("Ahmned naser".istitle())#False
 print("Ahmned Naser".isspace())#False
-print(" ".isspace())#False
+print(" ".isspace())#True
 print("".isupper())#False
 print("Ahmned Naser".isspace())#False
 print("ahmned naser".islower())#True

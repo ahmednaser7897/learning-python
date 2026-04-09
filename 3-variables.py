@@ -1,7 +1,7 @@
 # we can assign values to variables
 # we can change the value of a variable
 # we can declare multiple variables in one line
-#we can assign different data types to a variable
+# we can assign different data types to a variable
 # so we can change the value of a variable and the type of a variable in the run time
 
 name="John"
@@ -21,3 +21,6 @@ a=b=c=1
 print(a)
 print(b)
 print(c)
+
+# we can use variables in expressions
+print(a+b+c)

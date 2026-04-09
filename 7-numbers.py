@@ -3,11 +3,11 @@
 #-------------
 
 #Integer
-print(type( 1))#<class 'int'>
+print(type(1))#<class 'int'>
 #Float
-print(type( 1.0))#<class 'float'>
+print(type(1.0))#<class 'float'>
 #Complex
-print(type( 1+2j))#<class 'complex'>
+print(type(1+2j))#<class 'complex'>
 complexNumber=1+2j
 print(type(complexNumber))#<class 'complex'>
 print("rael part is {}".format(complexNumber.real))#rael part is 1.0

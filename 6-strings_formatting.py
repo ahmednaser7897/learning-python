@@ -35,8 +35,8 @@ print("my name is {} and i am {} years old and my rank is {}".format(name,age,ra
 #my name is ahmed and i am 20 years old and my rank is 10
 
 #if you want to spaceafy typs
-print("my name is {:.3s} and i am {:d} years old and my rank is {:.2f}".format(name,age,ranke))
-#my name is ahm and i am 20 years old and my rank is 10.00
+print("my name is {:.5s} and i am {:d} years old and my rank is {:.2f}".format(name,age,ranke))
+#my name is ahmed and i am 20 years old and my rank is 10.00
 
 
 #format mony
@@ -65,4 +65,4 @@ print("x:{2},y:{1},z:{0:.2f}".format(x,y,z))#x:3,y:2,z:1.00
 # f-string
 # name = "ahmed"
 # age = 20
-print(f"my name is {name} and i am {age} years old")#my name is ahmed and i am 20 years old
+print(f"my name is {name:.3s} and i am {age} years old")#my name is ahmed and i am 20 years old
