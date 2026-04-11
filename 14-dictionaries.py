@@ -9,7 +9,10 @@
 # [6] value can be any data type (numbers, strings, tuples, lists, dictionaries,set ,boolean, One more dictionary)
 # [7] Dictionaries is not ordered( can not access by index)
 # [8] Dictionaries access by key
-
+########
+    #Dictionaries are mutable
+    #The Dictionary Itself is Mutable: You can add or remove items from a dictionary using methods like .add(), .remove(), and .update() without creating a new object.
+########
 #Dictionaries
 thisdict = dict(name = "John", age = 36, country = "Norway")
 print(thisdict)#{'name': 'John', 'age': 36, 'country': 'Norway'}
@@ -45,7 +48,7 @@ print(user.items())#dict_items([('name', 'John'), ('age', 40), ('city', 'New Yor
 print(list(user.items()))#[('name', 'John'), ('age', 40), ('city', 'New York'), ('skell', [1, 2, 3])]
 
 
- #-------------
+#-------------
 #Dictionaries Methods
 #-------------
 

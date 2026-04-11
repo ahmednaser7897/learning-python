@@ -8,7 +8,20 @@
 #Tuble is immutable => you can not add or remove items
 #tuble items is not unique
 #you can add different data types in tuble
-
+########
+    #Tuble are immutable
+    #1-No Item Assignment: You cannot change a specific character by its index.
+    #2-Structure vs. Content: While the tuple itself is immutable, it can contain mutable objects like lists.
+    #In this case, you can modify the contents of the internal list,
+    #but you still cannot replace the list itself with a different object.
+    #3-Reassignment: You can "update" a tuple by creating a completely new one 
+    # and assigning it to the same variable name (e.g., using +=),
+    #  but this results in a different object in memory with a new ID.
+    #4-Hashability: Because they are immutable, tuples are hashable (provided all their elements are also hashable)
+    #  and can be used as keys in a dictionary, unlike mutable lists.
+    #5-Comparison with Lists: Unlike tuples, lists are mutable,
+    #  meaning they can be resized or modified in place after creation.
+########
 tuble1 = ("one","two","three","four",5,6,7)
 tuble2="one","two","three","four",5,6,7
 print(type(tuble1))#<class 'tuple'>

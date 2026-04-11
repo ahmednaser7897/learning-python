@@ -9,7 +9,14 @@
 # [6] Set is mutable => you can add or remove items
 # [7] Set items is unique
 # [8] Set is Mutable you can add or remove items
-
+########
+    #Set are mutable
+    #The Set Itself is Mutable: You can add or remove items from a set using methods 
+    # like .add(), .remove(), and .update() without creating a new object.
+    #Set Items Must Be Immutable: The elements *inside* a set must be immutable
+    # (e.g., numbers, strings, tuples). You cannot add a list or another set to a set.
+    #Reassignment: Like other mutable types, you can reassign the variable to a new set.
+########
 set1 = {"one","two",3,4}
 print(type(set1))#<class 'set'>
 print(len(set1))#4
